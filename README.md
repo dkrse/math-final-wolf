@@ -112,8 +112,9 @@ gap,count
 6,...
 ```
 
-The first column is the gap size $g$; the second is
-$\tau_g(N) = \#\{p_n : p_{n+1} \le N,\, p_{n+1} - p_n = g\}$.
+The first column is the gap size $g$; the second is the count
+$\tau_g(N)$ of consecutive prime pairs $(p_n, p_{n+1})$ with
+$p_{n+1} \le N$ and $p_{n+1} - p_n = g$.
 SHA-256 sums in `ml_data/SHA256SUMS` confirm bit-identity across rebuilds.
 
 The convention here matches Cohen 2024: the gap $d_1 = p_2 - p_1 = 1$
