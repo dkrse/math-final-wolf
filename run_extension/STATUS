@@ -1,0 +1,5 @@
+state: DONE
+timestamp: 2026-05-01T17:09:36+02:00
+host: work-pc
+pid_launcher: 20950
+note: all 3 CSVs in ml_data/, sha256 written

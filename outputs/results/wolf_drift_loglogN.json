@@ -1,0 +1,15 @@
+{
+  "loglogN_regression": {
+    "log_a": {
+      "intercept": 0.7162703682344904,
+      "slope": -0.16314171329047603
+    },
+    "log_s": {
+      "intercept": 0.19092513939260825,
+      "slope": -0.040839200629385126
+    },
+    "sestak_b": -0.202,
+    "ratio_slope_a_over_b": 0.8076322440122575,
+    "ratio_slope_s_over_b": 0.20217426054151053
+  }
+}

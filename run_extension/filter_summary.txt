@@ -1,0 +1,61 @@
+======================================================================
+FILTER PREDICTION SUMMARY
+======================================================================
+
+N_existing: 25, N_new: 4, N_total: 29
+g grid: even 2..250
+
+--- PRIMARY FILTER  ρ ∈ [0.05, 1.10],  N_g ≥ 100 ---
+
+Total surviving (all N): n=180
+  ω distribution: {1: 104, 2: 76}
+  unique g values: [np.int64(2), np.int64(4), np.int64(6), np.int64(8), np.int64(10), np.int64(12), np.int64(14), np.int64(16), np.int64(20), np.int64(22), np.int64(26)]
+  unique N values: 29
+
+Existing-N only: n=140
+  ω distribution: {1: 88, 2: 52}
+  unique g values: [np.int64(2), np.int64(4), np.int64(6), np.int64(8), np.int64(10), np.int64(12), np.int64(14), np.int64(16), np.int64(22)]
+  unique N values: 25
+
+New-N only (gain from extension): n=40
+  ω distribution: {1: 16, 2: 24}
+  unique g values: [np.int64(2), np.int64(4), np.int64(6), np.int64(8), np.int64(10), np.int64(12), np.int64(14), np.int64(16), np.int64(20), np.int64(22), np.int64(26)]
+  unique N values: 4
+
+
+--- RELAXED FILTER  ρ ∈ [0.05, 4.00],  N_g ≥ 100 ---
+
+Total surviving (all N): n=693
+  ω distribution: {1: 157, 2: 526, 3: 10}
+  unique g values: [np.int64(2), np.int64(4), np.int64(6), np.int64(8), np.int64(10), np.int64(12), np.int64(14), np.int64(16), np.int64(18), np.int64(20), np.int64(22), np.int64(24), np.int64(26), np.int64(28), np.int64(30), np.int64(32), np.int64(34), np.int64(36), np.int64(38), np.int64(40), np.int64(42), np.int64(44), np.int64(46), np.int64(48), np.int64(50), np.int64(52), np.int64(56), np.int64(58), np.int64(62), np.int64(64), np.int64(68), np.int64(74), np.int64(76), np.int64(82), np.int64(86), np.int64(88), np.int64(92), np.int64(94)]
+  unique N values: 29
+
+Existing-N only: n=548
+  ω distribution: {1: 133, 2: 411, 3: 4}
+  unique g values: [np.int64(2), np.int64(4), np.int64(6), np.int64(8), np.int64(10), np.int64(12), np.int64(14), np.int64(16), np.int64(18), np.int64(20), np.int64(22), np.int64(24), np.int64(26), np.int64(28), np.int64(30), np.int64(32), np.int64(34), np.int64(36), np.int64(38), np.int64(40), np.int64(44), np.int64(46), np.int64(50), np.int64(52), np.int64(56), np.int64(58), np.int64(62), np.int64(64), np.int64(68), np.int64(74), np.int64(76), np.int64(82), np.int64(86)]
+  unique N values: 25
+
+New-N only (gain from extension): n=145
+  ω distribution: {1: 24, 2: 115, 3: 6}
+  unique g values: [np.int64(2), np.int64(4), np.int64(6), np.int64(8), np.int64(10), np.int64(12), np.int64(14), np.int64(16), np.int64(18), np.int64(20), np.int64(22), np.int64(24), np.int64(26), np.int64(28), np.int64(30), np.int64(32), np.int64(34), np.int64(36), np.int64(38), np.int64(40), np.int64(42), np.int64(44), np.int64(46), np.int64(48), np.int64(50), np.int64(52), np.int64(56), np.int64(58), np.int64(62), np.int64(64), np.int64(68), np.int64(74), np.int64(76), np.int64(82), np.int64(86), np.int64(88), np.int64(92), np.int64(94)]
+  unique N values: 4
+
+
+--- NEW N VALUES — per-N gain ---
+
+               N   pri+   rel+   rel ω=3   rel ω=4
+  30000000000000      9     33         1         0
+ 100000000000000     10     36         1         0
+ 300000000000000     10     38         2         0
+1000000000000000     11     38         2         0
+
+--- SMALLEST g THAT ENTERS BY ω ---
+
+  ω=1 primary: smallest g = 2 (first enters at N = 1e+05)
+  ω=1 relaxed: smallest g = 2 (first enters at N = 1e+05)
+  ω=2 primary: smallest g = 6 (first enters at N = 3e+06)
+  ω=2 relaxed: smallest g = 6 (first enters at N = 1e+05)
+  ω=3 primary: NEVER
+  ω=3 relaxed: smallest g = 30 (first enters at N = 3e+11)
+  ω=4 primary: NEVER
+  ω=4 relaxed: NEVER

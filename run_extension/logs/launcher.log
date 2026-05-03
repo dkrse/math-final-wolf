@@ -1,0 +1,31 @@
+=== Launch 2026-04-30T16:29:09+02:00 ===
+Binary:  /home/krse/notebooks/ver-02/main-csv-static
+Workdir: /home/krse/notebooks/ver-02/run_extension
+Logs:    /home/krse/notebooks/ver-02/run_extension/logs
+
+  start  N3e13  N=30000000000000  CPU=0  log=/home/krse/notebooks/ver-02/run_extension/logs/3e13.log
+  start  N1e14  N=100000000000000  CPU=1  log=/home/krse/notebooks/ver-02/run_extension/logs/1e14.log
+  start  N3e14  N=300000000000000  CPU=2  log=/home/krse/notebooks/ver-02/run_extension/logs/3e14.log
+
+PIDs: 20958 20959 20960
+Waiting for completion...
+  done   N3e13  pid=20958  rc=0  2026-04-30T18:51:12+02:00
+  done   N1e14  pid=20959  rc=0  2026-05-01T00:25:09+02:00
+  done   N3e14  pid=20960  rc=0  2026-05-01T17:09:36+02:00
+
+=== Post-run checks ===
+
+=== Renaming into ml_data/ ===
+  moved  /home/krse/notebooks/ver-02/ml_data/gaps_N30000000000000.csv
+  moved  /home/krse/notebooks/ver-02/ml_data/gaps_N100000000000000.csv
+  moved  /home/krse/notebooks/ver-02/ml_data/gaps_N300000000000000.csv
+
+=== sha256 ===
+0ca6a99c573c0b27a5654b0732401d61ec2a7b89b3d8fc3a61676ad237f2aae9  gaps_N30000000000000.csv
+09d655a3efa4a75272bc22fb640436f26f2e4f7ee9420ef12ef0244f489cb56a  gaps_N100000000000000.csv
+f3dbada23bbc1f2d37a3e7aa48a279c814ed30bac9fe973b6e9d6ba4fa80e9e1  gaps_N300000000000000.csv
+
+=== Done 2026-05-01T17:09:36+02:00 ===
+Next steps (after SSH-attach):
+  source .venv/bin/activate
+  python run_extension/check_ratio.py --all

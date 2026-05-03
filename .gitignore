@@ -1,0 +1,24 @@
+# build artefacts
+app-c/build/
+app-python/.venv/
+app-python/__pycache__/
+**/__pycache__/
+*.pyc
+
+# editor / OS
+.ipynb_checkpoints/
+.DS_Store
+*~
+.vscode/
+.idea/
+
+.venv
+build/
+
+# outputs/
+# paper/
+# main-cvs-static
+# new-instructions
+
+
+

@@ -1,0 +1,50 @@
+{
+  "scenario": "C",
+  "summary": "Sestakov sqrt(omega(g)) + b*loglogN nález je z veľkej časti artefakt zlej baseline. Voči peer-reviewed Wolf 2014 PRE eq. (7) amplitúda omega-člena klesá o 78% (M1*) až 95% (M3); loglog N člen je plne absorbovaný do publikovaného Wolf finite-size driftu; OOS R^2 voči Wolf2014 je -18.3 (horšie než priemer).",
+  "verification_cohen_table1": {
+    "t30": {"empirical": {"n": 54400026, "k1": 19.7379, "k2": 683.2373, "G_n": 282},
+            "cohen_ref": {"n": 54400026, "k1": 19.7379, "k2": 683.2373, "G_n": 282},
+            "max_rel_err": 4.5e-7, "status": "PASS"},
+    "t36": {"empirical": {"n": 2874398513, "k1": 23.9074, "k2": 1022.16, "G_n": 464},
+            "cohen_ref": {"n": 2.8744e9, "k1": 23.9074, "k2": 1022.2, "G_n": 464},
+            "max_rel_err": 4.0e-5, "status": "PASS"}
+  },
+  "wolf_drift_reproduction": {
+    "a_at_1.7e8": 1.269,
+    "a_at_3e14": 1.156,
+    "wolf_reported_range": [1.51, 1.27],
+    "shape": "monotonically decreasing, same as Wolf Fig. 6",
+    "absolute_offset": "~0.15 lower than Wolf (likely u_max=2 vs Wolf's range)"
+  },
+  "loglogN_explained_by_wolf_drift": {
+    "log_a_loglogN_slope": -0.1631,
+    "log_s_loglogN_slope": -0.0408,
+    "sestak_b_M1star": -0.202,
+    "ratio_slope_a_over_b": 0.808,
+    "ratio_slope_s_over_b": 0.202,
+    "combined_explained": 1.01,
+    "conclusion": "Wolf's published finite-size drift in (a, s) reproduces ~100% of Sestak's b*loglogN term"
+  },
+  "refit_M1_star": {
+    "n": 169,
+    "Sestak":   {"a": 0.8361, "b": -0.1949, "rss_w": 1.447, "aic": -318.86},
+    "Wolf2014": {"a": 0.1843, "b":  0.0120, "rss_w": 1.430, "aic": -320.85},
+    "Wolf2018": {"a": 0.1593, "b": -0.0041, "rss_w": 0.702, "aic": -441.16},
+    "Cohen":    {"a": 1.0914, "b": -0.2153, "rss_w": 3.525, "aic": -168.44}
+  },
+  "refit_M3": {
+    "Sestak":   {"alpha": 0.691, "beta": 1.092, "a": 0.512, "b": -0.170, "c": 0.112, "rss_w": 0.657, "aic": -446.30},
+    "Wolf2014": {"alpha": 0.987, "beta": 1.334, "a": 0.026, "b": -0.244, "c": 0.898, "rss_w": 0.156, "aic": -689.10},
+    "Wolf2018": {"alpha": 0.919, "beta": 1.318, "a": 0.027, "b": -0.149, "c": 0.502, "rss_w": 0.153, "aic": -692.26},
+    "Cohen":    {"alpha": 1.398, "beta": 1.512, "a": 1.123, "b": -0.208, "c": -0.088, "rss_w": 2.824, "aic": -199.92}
+  },
+  "oos_R2": {
+    "N_split": 1e13, "n_train": 140, "n_test": 29,
+    "Sestak": 0.6537, "Wolf2014": -18.2655, "Wolf2018": -5.7299, "Cohen": 0.5375
+  },
+  "answers_to_three_questions": {
+    "Q1_omega_survives_vs_Wolf2014": "NIE — amplitúda klesá z 0.836 na 0.184 (M1*) a na 0.026 (M3). M3 hodnota je v rámci šumu od nuly.",
+    "Q2_loglogN_reproduces_wolf_drift": "ÁNO — slope_a + slope_s vs loglogN dáva 1.01x Sestakov b koeficient. Plná numerická zhoda.",
+    "Q3_OOS_R2_vs_Wolf2014": "-18.27 — model úplne nefunguje na hold-out N > 1e13 voči Wolf2014 baseline."
+  }
+}

@@ -1,0 +1,72 @@
+Analysis of prime gaps in the range [2, 30000000000000]
+=========================================================
+New record gap: 1 at p=2  (merit=1.443)
+New record gap: 2 at p=3  (merit=1.820)
+New record gap: 4 at p=7  (merit=2.056)
+New record gap: 6 at p=23  (merit=1.914)
+New record gap: 8 at p=89  (merit=1.782)
+New record gap: 14 at p=113  (merit=2.961)
+New record gap: 18 at p=523  (merit=2.876)
+New record gap: 20 at p=887  (merit=2.946)
+New record gap: 22 at p=1129  (merit=3.130)
+New record gap: 34 at p=1327  (merit=4.728)
+New record gap: 36 at p=9551  (merit=3.928)
+New record gap: 44 at p=15683  (merit=4.555)
+New record gap: 52 at p=19609  (merit=5.261)
+New record gap: 72 at p=31397  (merit=6.954)
+New record gap: 86 at p=155921  (merit=7.192)
+New record gap: 96 at p=360653  (merit=7.503)
+New record gap: 112 at p=370261  (merit=8.735)
+New record gap: 114 at p=492113  (merit=8.698)
+New record gap: 118 at p=1349533  (merit=8.360)
+New record gap: 132 at p=1357201  (merit=9.348)
+New record gap: 148 at p=2010733  (merit=10.197)
+New record gap: 154 at p=4652353  (merit=10.031)
+New record gap: 180 at p=17051707  (merit=10.810)
+New record gap: 210 at p=20831323  (merit=12.461)
+New record gap: 220 at p=47326693  (merit=12.449)
+New record gap: 222 at p=122164747  (merit=11.922)
+New record gap: 234 at p=189695659  (merit=12.276)
+New record gap: 248 at p=191912783  (merit=13.003)
+New record gap: 250 at p=387096133  (merit=12.643)
+New record gap: 282 at p=436273009  (merit=14.175)
+New record gap: 288 at p=1294268491  (merit=13.727)
+New record gap: 292 at p=1453168141  (merit=13.841)
+New record gap: 320 at p=2300942549  (merit=14.845)
+New record gap: 336 at p=3842610773  (merit=15.225)
+New record gap: 354 at p=4302407359  (merit=15.959)
+New record gap: 382 at p=10726904659  (merit=16.540)
+New record gap: 384 at p=20678048297  (merit=16.167)
+New record gap: 394 at p=22367084959  (merit=16.533)
+New record gap: 456 at p=25056082087  (merit=19.044)
+New record gap: 464 at p=42652618343  (merit=18.957)
+New record gap: 468 at p=127976334671  (merit=18.299)
+New record gap: 474 at p=182226896239  (merit=18.281)
+New record gap: 486 at p=241160624143  (merit=18.543)
+New record gap: 490 at p=297501075799  (merit=18.547)
+New record gap: 500 at p=303371455241  (merit=18.912)
+New record gap: 514 at p=304599508537  (merit=19.439)
+New record gap: 516 at p=416608695821  (merit=19.286)
+New record gap: 532 at p=461690510011  (merit=19.808)
+New record gap: 534 at p=614487453523  (merit=19.673)
+New record gap: 540 at p=738832927927  (merit=19.760)
+New record gap: 582 at p=1346294310749  (merit=20.839)
+New record gap: 588 at p=1408695493609  (merit=21.020)
+New record gap: 602 at p=1968188556461  (merit=21.266)
+New record gap: 652 at p=2614941710599  (merit=22.803)
+New record gap: 674 at p=7177162611713  (merit=22.769)
+New record gap: 716 at p=13829048559701  (merit=23.663)
+New record gap: 766 at p=19581334192423  (merit=25.028)
+
+=========================================================
+Summary:
+  Range:               [2, 30000000000000]
+  Number of primes:    1000121668853
+  Number of gaps:      1000121668852
+  Largest gap:         766
+  Number of records:   57
+  Running time:        8500.40 s
+
+Output files:
+  gaps_N3e13.csv - histogram of all gaps
+  records_N3e13.csv - record gaps
